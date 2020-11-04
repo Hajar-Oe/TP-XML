@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT shop (client,commande)+ >
+<!ELEMENT client (nom, prenom,adresse)>
+<!ATTLIST client numClient ID #REQUIRED>
+    <!ELEMENT nom (#PCDATA)>
+    <!ELEMENT prenom (#PCDATA)>
+    <!ELEMENT adresse (#PCDATA)>
+<!ELEMENT commande (date,ligne_commande*)>
+     <!ATTLIST commande idClient IDREF #REQUIRED >
+     <!ELEMENT date (jour,mois,annee)>
+        <!ELEMENT jour (#PCDATA)>
+        <!ELEMENT mois (#PCDATA)>
+        <!ELEMENT annee (#PCDATA)>
+     <!ELEMENT ligne_commande (produit,qte)*>
+        <!ELEMENT produit EMPTY>
+            <!ATTLIST produit 
+            id ID #REQUIRED
+            designation (PCDATA) #IMPLIED
+            >
+            <!ELEMENT qte (#PCDATA)>
+            

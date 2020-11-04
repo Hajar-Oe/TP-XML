@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE shop SYSTEM "file:/C:/Users/Hajar%20Ousguine/OneDrive/Documents/Cours%20S3/XML%20M_Daaif/TP/commande.dtd">
+<shop>
+<client numClient="A12">
+    <nom>Ousguine</nom>
+    <prenom>Hajar</prenom>
+    <adresse>Salé</adresse>
+</client>
+<commande idClient="A12">
+        <date>
+            <jour>03</jour>
+            <mois>Mars</mois>
+            <annee>2020</annee>
+        </date>
+        <ligne_commande>
+            <produit id="E23"/>
+            <qte>2</qte>
+        </ligne_commande>
+</commande>
+</shop>
